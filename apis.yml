@@ -1,0 +1,89 @@
+aid: sap-commerce
+name: SAP Commerce Cloud
+description: SAP Commerce Cloud (formerly SAP Hybris) is an enterprise e-commerce platform providing OCC (Omni Commerce Connect) REST APIs for products, catalogs, carts, orders, customers, and omnichannel commerce experiences. It enables headless commerce, B2C and B2B storefronts, and integrations across the SAP ecosystem.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/sap-commerce/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - E-Commerce
+  - Commerce
+  - Retail
+  - B2B
+  - B2C
+  - SAP
+  - Enterprise
+  - Omnichannel
+  - Products
+  - Orders
+  - Carts
+apis:
+  - aid: sap-commerce:sap-commerce-occ-api
+    name: SAP Commerce Cloud OCC API
+    description: The Omni Commerce Connect (OCC) REST API exposes a broad set of commerce and data services, enabling integration of SAP Commerce functionality anywhere in the application landscape. OCC v2 is the default stateless REST API covering products, catalogs, carts, orders, users, and more.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8c19ab00866910148f87bf32d4a60d38.html
+    baseURL: https://{host}/occ/v2/{baseSiteId}
+    tags:
+      - OCC
+      - REST
+      - E-Commerce
+      - Products
+      - Carts
+      - Orders
+      - Customers
+      - Catalogs
+    properties:
+      - type: Documentation
+        url: https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8c19ab00866910148f87bf32d4a60d38.html
+      - type: OpenAPI
+        url: https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/452dcbb0e00f47e88a69cdaeb87a925d/66abfe678b55457fab235ce8039dda71.html
+    contact:
+      - FN: SAP Commerce Support
+        url: https://support.sap.com/en/index.html
+  - aid: sap-commerce:sap-commerce-cloud-portal-api
+    name: SAP Commerce Cloud Portal API
+    description: The SAP Commerce Cloud Portal API provides programmatic access to manage cloud environments, deployments, builds, and configurations within the SAP Commerce Cloud control plane.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/452dcbb0e00f47e88a69cdaeb87a925d/66abfe678b55457fab235ce8039dda71.html
+    baseURL: https://api.cloud.cx.sap.com
+    tags:
+      - Cloud
+      - Deployment
+      - Management
+      - DevOps
+      - Builds
+      - Environments
+    properties:
+      - type: Documentation
+        url: https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/452dcbb0e00f47e88a69cdaeb87a925d/66abfe678b55457fab235ce8039dda71.html
+    contact:
+      - FN: SAP Commerce Support
+        url: https://support.sap.com/en/index.html
+common:
+  - type: Website
+    url: https://www.sap.com/products/crm/commerce-cloud.html
+  - type: Documentation
+    url: https://help.sap.com/docs/SAP_COMMERCE
+  - type: GitHubOrg
+    url: https://github.com/SAP-samples/cloud-commerce-sample-setup
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/sap-cx-commerce-cloud/
+  - type: Blog
+    url: https://community.sap.com/t5/c-khhcw49343/SAP+Commerce+Cloud/pd-p/73555000100800001224
+  - type: Pricing
+    url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+  - type: StatusPage
+    url: https://www.sap.com/about/trust-center/cloud-service-status.html
+  - type: X
+    url: https://x.com/SAP
+  - type: Plans
+    url: plans/sap-commerce-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/sap-commerce-rate-limits.yml
+  - type: FinOps
+    url: finops/sap-commerce-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

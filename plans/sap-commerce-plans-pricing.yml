@@ -1,0 +1,59 @@
+name: SAP Commerce Cloud Plans and Pricing
+description: SAP Commerce Cloud is sold as an enterprise SaaS platform. Pricing is not publicly listed and is negotiated directly with SAP based on order volume (annual transactions) and gross merchandise value (GMV). Contracts are typically structured through CPEA (Cloud Platform Enterprise Agreement) or direct enterprise agreements with SAP sales.
+url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: SAP Commerce Cloud Essentials
+    description: Entry-level enterprise offering for mid-market companies. Includes core OCC REST APIs, B2C storefront, product catalog management, cart and order management, and basic omnichannel capabilities. Suitable for companies with lower GMV and transaction volumes.
+    url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+    pricing:
+      model: Custom / Enterprise Agreement
+      notes: Pricing typically starts around $150,000 USD per year, negotiated based on annual order volume and GMV. Requires contact with SAP sales.
+    features:
+      - OCC REST API v2 access
+      - B2C storefront support
+      - Product catalog management
+      - Cart and order management
+      - OAuth 2.0 authentication
+      - Basic search and merchandising
+      - Standard support
+  - name: SAP Commerce Cloud Professional
+    description: Mid-tier enterprise offering for growing commerce businesses. Adds B2B capabilities, advanced personalization, multiple storefronts, and extended integrations with SAP ecosystem (S/4HANA, SAP Marketing Cloud, SAP Customer Data Cloud).
+    url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+    pricing:
+      model: Custom / Enterprise Agreement
+      notes: Typically ranges from $250,000–$350,000 USD per year based on GMV and transaction volume. Requires contact with SAP sales.
+    features:
+      - Everything in Essentials
+      - B2B commerce capabilities
+      - Multiple storefronts
+      - Advanced personalization
+      - SAP S/4HANA integration
+      - SAP Marketing Cloud integration
+      - Advanced search (Solr-based)
+      - Customer segmentation
+      - Enhanced support SLAs
+  - name: SAP Commerce Cloud Enterprise
+    description: Full enterprise offering for large-scale commerce operations. Designed for companies with $200M+ GMV, complex B2B/B2C hybrid requirements, multiple brands, and global deployments across regions. Includes full API access, headless commerce, and complete SAP ecosystem integration.
+    url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+    pricing:
+      model: Custom / Enterprise Agreement
+      notes: Typically ranges from $350,000–$500,000+ USD per year. Based on negotiated GMV tiers and order volume. Requires direct engagement with SAP enterprise sales.
+    features:
+      - Everything in Professional
+      - Unlimited storefronts
+      - Headless commerce (Composable Storefront / Spartacus)
+      - Full OCC API access (v1 and v2)
+      - Global multi-region deployment
+      - Advanced B2B features (quotes, budget management, org management)
+      - Full SAP CX suite integration
+      - Dedicated customer success manager
+      - Premium 24/7 support SLAs
+      - Industry accelerators (Telco, Financial Services, CPG)
+notes:
+  - SAP Commerce Cloud pricing is entirely custom and not published on a public pricing page.
+  - Pricing is negotiated through SAP sales or SAP authorized partners.
+  - Common commercial vehicles include CPEA (Cloud Platform Enterprise Agreement) and BTPEA.
+  - Trial environments may be provisioned via SAP BTP trial for evaluation purposes.
+  - Contact SAP sales at https://www.sap.com/products/crm/commerce-cloud/pricing.html for a quote.

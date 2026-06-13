@@ -1,0 +1,51 @@
+name: SAP Commerce Cloud API Rate Limits
+description: SAP Commerce Cloud OCC API rate limiting is not publicly documented with fixed global thresholds. Rate limits for the OCC APIs are typically configured at the infrastructure level and may vary by deployment, environment tier, and negotiated enterprise agreement. SAP Commerce Cloud is deployed on customer-managed or SAP-managed cloud infrastructure, and rate limiting behavior depends on the environment configuration.
+url: https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8b422f4b86691014b579bb20d6432cde.html
+created: '2026-06-13'
+modified: '2026-06-13'
+rateLimits:
+  - scope: OCC REST API (v2)
+    description: The OCC v2 API does not publish fixed global rate limits. Limits are configured per deployment at the web server / load balancer layer. Customers can configure custom rate limiting through SAP Commerce Cloud's infrastructure settings.
+    limits:
+      - type: Requests per second (per endpoint)
+        value: Configurable
+        notes: No fixed published limit; typical deployments configure limits at 50–500 req/sec per endpoint depending on infrastructure tier.
+      - type: Concurrent sessions
+        value: Configurable
+        notes: Dependent on the number of Commerce Cloud instances provisioned in the subscription.
+      - type: OAuth token lifetime (access token)
+        value: 3600 seconds (1 hour) default
+        notes: Access tokens expire after 1 hour by default. Configurable via OAuth client settings in the SAP Commerce administration console.
+      - type: OAuth token lifetime (refresh token)
+        value: 2592000 seconds (30 days) default
+        notes: Refresh tokens have a 30-day expiry by default. Configurable per OAuth client.
+  - scope: SAP Commerce Cloud Portal API
+    description: The Cloud Portal Management API used for managing deployments and environments has its own rate limiting at the SAP cloud infrastructure level.
+    limits:
+      - type: API calls
+        value: Not publicly documented
+        notes: Rate limits for the Cloud Portal API are not published. Contact SAP support for environment-specific limits.
+  - scope: Search and Catalog APIs
+    description: Product search and catalog browsing endpoints may have additional caching and request limits configured at the Solr and application server level.
+    limits:
+      - type: Search requests per minute
+        value: Configurable
+        notes: Typically rate limited via the web application firewall or load balancer in front of the SAP Commerce deployment.
+throttlingBehavior:
+  description: When rate limits are exceeded (if configured), the SAP Commerce OCC API returns standard HTTP status codes.
+  httpStatusOnExceed: 429 Too Many Requests
+  retryAfterHeader: true
+  notes: Specific throttling behavior depends on how the SAP Commerce environment is configured and what infrastructure-level rate limiting is in place.
+recommendations:
+  - Implement exponential backoff with jitter when handling 429 or 503 responses.
+  - Cache product catalog and category data client-side to reduce read API call volume.
+  - Use OAuth token refresh proactively before expiry to avoid authentication failures.
+  - For high-volume integrations, discuss dedicated infrastructure capacity with SAP or your SAP partner.
+  - Monitor API usage through the SAP Commerce Cloud Monitoring tools or via SAP Cloud ALM.
+references:
+  - title: OCC API Implementation
+    url: https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8b422f4b86691014b579bb20d6432cde.html
+  - title: OAuth 2.0 in SAP Commerce
+    url: https://help.sap.com/docs/SAP_COMMERCE/d0224eca81e249cb821f2cdf45a82ace/8c181d168669101480a1864a1e8fceb3.html
+  - title: SAP Trust Center Cloud Status
+    url: https://www.sap.com/about/trust-center/cloud-service-status.html

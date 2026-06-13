@@ -1,0 +1,80 @@
+name: SAP Commerce Cloud FinOps
+description: Financial operations guidance for SAP Commerce Cloud API consumption. SAP Commerce Cloud is priced as an enterprise platform rather than a pay-per-API-call model, so FinOps practices focus on license optimization, environment management, infrastructure right-sizing, and consumption-based add-on services within the SAP Business Technology Platform (BTP) ecosystem.
+url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+created: '2026-06-13'
+modified: '2026-06-13'
+commercialModel:
+  type: Enterprise License + Consumption
+  description: SAP Commerce Cloud is licensed via annual enterprise agreements based on GMV (Gross Merchandise Value) tiers and annual order volume. Infrastructure consumption may additionally be metered through SAP BTP credits (CPEA model) for add-on services such as SAP Integration Suite, SAP Customer Data Cloud, and other connected BTP services.
+  pricingDrivers:
+    - name: Gross Merchandise Value (GMV)
+      description: Annual revenue flowing through the platform. Primary driver of license cost.
+      notes: GMV tiers typically start at $10M and scale to $200M+ for enterprise tiers.
+    - name: Annual Order Volume
+      description: Number of orders processed per year across all storefronts.
+      notes: Higher order volumes may trigger additional licensing fees beyond the base GMV tier.
+    - name: Number of Storefronts
+      description: Each brand, channel, or region may require a separate storefront license.
+      notes: Multi-storefront configurations can significantly increase licensing costs.
+    - name: SAP BTP Credits (CPEA)
+      description: Additional SAP BTP services consumed alongside Commerce Cloud (e.g., Integration Suite, CDP, Marketing Cloud) are priced via BTP credit consumption.
+      notes: CPEA credits are shared across eligible BTP services and committed annually.
+costOptimization:
+  strategies:
+    - name: Right-size Environment Tiers
+      description: Ensure non-production environments (development, staging, QA) are sized appropriately. Avoid over-provisioning compute for environments that do not require production-level capacity.
+      impact: Medium
+    - name: Consolidate Storefronts
+      description: Where business requirements allow, consolidate multiple small storefronts into a single multi-site configuration to reduce per-storefront licensing fees.
+      impact: High
+    - name: Optimize BTP Service Consumption
+      description: Monitor and right-size consumption of connected SAP BTP services (Integration Suite message packs, CDP profiles, etc.) to avoid over-consumption of CPEA credits.
+      impact: Medium
+    - name: Cache API Responses
+      description: Implement caching for high-frequency read API calls (product catalog, categories, prices) to reduce infrastructure load and associated compute costs.
+      impact: Low-Medium
+    - name: Negotiate GMV Caps
+      description: Work with SAP sales to negotiate favorable GMV tier caps and step-up thresholds that align with realistic business growth projections.
+      impact: High
+    - name: Leverage SAP Store Marketplace
+      description: For smaller deployments or add-ons, explore SAP Store offerings which may provide more granular consumption-based pricing compared to direct CPEA agreements.
+      impact: Low
+monitoring:
+  tools:
+    - name: SAP Commerce Cloud Monitoring
+      description: Built-in monitoring available through the SAP Commerce Cloud Portal for tracking request volumes, error rates, and performance metrics.
+      url: https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD
+    - name: SAP Cloud ALM
+      description: SAP Application Lifecycle Management tool for monitoring SAP cloud service health, performance, and usage across the SAP landscape.
+      url: https://help.sap.com/docs/cloud-alm
+    - name: SAP Trust Center / Cloud Availability Center
+      description: Public dashboard for monitoring SAP Commerce Cloud service availability and planned maintenance windows.
+      url: https://www.sap.com/about/trust-center/cloud-service-status.html
+    - name: SAP BTP Cockpit
+      description: For monitoring consumption of BTP services linked to Commerce Cloud (Integration Suite, CDP, etc.) and tracking CPEA credit utilization.
+      url: https://cockpit.btp.cloud.sap/
+budgetingGuidance:
+  description: SAP Commerce Cloud requires significant upfront budget commitment due to its enterprise licensing model. Budget planning should account for platform license, implementation/customization costs, ongoing managed services, and SAP BTP add-on consumption.
+  typicalCostRanges:
+    - tier: Mid-Market
+      annualPlatformLicense: $150,000 - $250,000 USD
+      implementationCost: $500,000 - $1,500,000 USD
+      notes: For companies with GMV $10M–$100M and moderate transaction volumes.
+    - tier: Enterprise
+      annualPlatformLicense: $250,000 - $500,000+ USD
+      implementationCost: $1,500,000 - $5,000,000+ USD
+      notes: For companies with GMV $100M+ and high transaction volumes, multiple storefronts, complex B2B/B2C requirements.
+  hiddenCosts:
+    - SAP partner implementation and integration fees
+    - Custom extension development
+    - Ongoing managed services and support
+    - SAP upgrade and patch management
+    - Third-party integration costs (payment gateways, tax engines, shipping providers)
+    - Training and certification for development teams
+references:
+  - title: SAP Commerce Cloud Pricing Page
+    url: https://www.sap.com/products/crm/commerce-cloud/pricing.html
+  - title: SAP BTP CPEA Model Documentation
+    url: https://help.sap.com/docs/btp/sap-business-technology-platform/what-is-consumption-based-commercial-model
+  - title: SAP Trust Center
+    url: https://www.sap.com/about/trust-center.html
