@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "SAP Commerce Cloud OCC API",
+  "description": "SAP Commerce Cloud (formerly SAP Hybris) is an enterprise e-commerce platform providing OCC (Omni Commerce Connect) REST APIs for products, catalogs, carts, orders, customers, and omnichannel commerce experiences.",
+  "url": "https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8c19ab00866910148f87bf32d4a60d38.html",
+  "termsOfService": "https://www.sap.com/about/legal/terms-of-use.html",
+  "provider": {
+    "@type": "Organization",
+    "name": "SAP",
+    "url": "https://www.sap.com",
+    "sameAs": [
+      "https://x.com/SAP",
+      "https://www.linkedin.com/showcase/sap-cx-commerce-cloud/"
+    ]
+  },
+  "documentation": "https://help.sap.com/docs/SAP_COMMERCE",
+  "dateModified": "2026-06-13",
+  "keywords": [
+    "E-Commerce",
+    "Commerce",
+    "Retail",
+    "B2B",
+    "B2C",
+    "SAP",
+    "Enterprise",
+    "Omnichannel",
+    "Products",
+    "Orders",
+    "Carts",
+    "OCC",
+    "REST"
+  ]
+}
