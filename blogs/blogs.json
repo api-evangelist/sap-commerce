@@ -1,5 +1,17 @@
 {
   "blogSource": "https://community.sap.com/t5/c-khhcw49343/SAP+Commerce+Cloud/pd-p/73555000100800001224",
   "lastFetched": "2026-06-13",
-  "posts": []
+  "posts": [],
+  "repo": "sap-commerce",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/showcase/sap-cx-commerce-cloud/",
+      "feed_url": "https://www.linkedin.com/showcase/sap-cx-commerce-cloud/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
