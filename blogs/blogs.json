@@ -1,17 +1,15 @@
 {
-  "blogSource": "https://community.sap.com/t5/c-khhcw49343/SAP+Commerce+Cloud/pd-p/73555000100800001224",
-  "lastFetched": "2026-06-13",
-  "posts": [],
   "repo": "sap-commerce",
+  "blogSource": "https://community.sap.com/t5/c-khhcw49343/SAP+Commerce+Cloud/pd-p/73555000100800001224",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/showcase/sap-cx-commerce-cloud/",
-      "feed_url": "https://www.linkedin.com/showcase/sap-cx-commerce-cloud/",
-      "title": "",
+      "source": "https://community.sap.com/t5/c-khhcw49343/SAP+Commerce+Cloud/pd-p/73555000100800001224",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:07:46Z",
+  "agent_pulled": "2026-06-27"
 }
