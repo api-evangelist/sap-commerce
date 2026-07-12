@@ -62,6 +62,10 @@ apis:
       - FN: SAP Commerce Support
         url: https://support.sap.com/en/index.html
 common:
+  - type: VulnerabilityDisclosure
+    url: security/sap-commerce-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/sap-commerce-domain-security.yml
   - type: Website
     url: https://www.sap.com/products/crm/commerce-cloud.html
   - type: Documentation
