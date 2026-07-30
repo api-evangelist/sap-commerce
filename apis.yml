@@ -1,7 +1,19 @@
 aid: sap-commerce
 name: SAP Commerce Cloud
 description: SAP Commerce Cloud (formerly SAP Hybris) is an enterprise e-commerce platform providing OCC (Omni Commerce Connect) REST APIs for products, catalogs, carts, orders, customers, and omnichannel commerce experiences. It enables headless commerce, B2C and B2B storefronts, and integrations across the SAP ecosystem.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sap-commerce.png
 url: https://raw.githubusercontent.com/api-evangelist/sap-commerce/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
