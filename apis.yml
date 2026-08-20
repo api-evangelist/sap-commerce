@@ -27,6 +27,18 @@ tags:
   - SAP
   - Enterprise
   - Omnichannel
+  - Product
+  - Order
+  - Cart
+tags_raw:
+  - E-Commerce
+  - Commerce
+  - Retail
+  - B2B
+  - B2C
+  - SAP
+  - Enterprise
+  - Omnichannel
   - Products
   - Orders
   - Carts
@@ -38,6 +50,15 @@ apis:
     humanURL: https://help.sap.com/docs/SAP_COMMERCE/e5d7cec9064f453b84235dc582b886da/8c19ab00866910148f87bf32d4a60d38.html
     baseURL: https://{host}/occ/v2/{baseSiteId}
     tags:
+      - OCC
+      - REST
+      - E-Commerce
+      - Product
+      - Cart
+      - Order
+      - Customers
+      - Catalogs
+    tags_raw:
       - OCC
       - REST
       - E-Commerce
