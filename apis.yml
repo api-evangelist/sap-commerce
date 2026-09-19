@@ -72,7 +72,7 @@ apis:
   - Cart
   - Order
   - Customers
-  - Catalogs
+  - Catalog
   tags_raw:
   - OCC
   - REST
@@ -98,6 +98,13 @@ apis:
   humanURL: https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/452dcbb0e00f47e88a69cdaeb87a925d/66abfe678b55457fab235ce8039dda71.html
   baseURL: https://api.cloud.cx.sap.com
   tags:
+  - Cloud
+  - Deployment
+  - Management
+  - DevOps
+  - Builds
+  - Environment
+  tags_raw:
   - Cloud
   - Deployment
   - Management
